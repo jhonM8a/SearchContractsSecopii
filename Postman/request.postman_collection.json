@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "15301af8-172d-46f4-8995-f763136a2be6",
+		"name": "ProyectAgileCourse",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5438307"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/searchcontracts/v1/user/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullName\":\"{{$randomFullName}}\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"department\":\"Meta\",\r\n    \"city\": \"Villavicencio\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/searchcontracts/v1/user/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"searchcontracts",
+						"v1",
+						"user",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
