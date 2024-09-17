@@ -20,7 +20,7 @@ public class User {
 
     @PostMapping("/create")
     public ResponseEntity createUser(@RequestBody UserDAO userDAO){
-
+        //functional interface
         convertDAOToUserEntity = userdao -> new UserEntity(userdao.getFullName(), userdao.getEmail(), userdao.getDepartment(), userdao.getCity());
 
         userRepository.save(convertDAOToUserEntity.convert(userDAO));
