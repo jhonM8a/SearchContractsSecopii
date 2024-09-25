@@ -1,0 +1,56 @@
+.social-login-container {
+    margin-top: 24px;
+  }
+  
+  .divider-container {
+    position: relative;
+  }
+  
+  .divider-line {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid #ccc;
+  }
+  
+  .divider-text-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: #fff;
+    padding: 0 8px;
+  }
+  
+  .divider-text {
+    color: #888;
+  }
+  
+  .button-container {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  
+  .social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .icon {
+    margin-right: 8px;
+    font-size: 16px;
+  }
+  
