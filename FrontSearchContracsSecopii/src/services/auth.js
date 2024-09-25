@@ -12,8 +12,6 @@ export const loginUser = async (email, password) => {
         throw new Error('Error en la autenticación');
       }
   
-      const data = await response.json();
-      return data; // Retorna la respuesta de la API, que debería incluir datos del usuario
     } catch (error) {
       throw new Error(error.message || 'Error en la autenticación');
     }
