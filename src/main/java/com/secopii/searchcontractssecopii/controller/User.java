@@ -31,7 +31,6 @@ public class User {
 
     @PostMapping("/auth")
     public ResponseEntity validateUser(@RequestBody UserLogin userLogin){
-        System.out.println(".------------>");
         return new ResponseEntity(HttpStatus.OK);
     }
 
