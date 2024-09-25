@@ -2,6 +2,7 @@ package com.secopii.searchcontractssecopii.controller;
 
 import com.secopii.searchcontractssecopii.repository.IUserRepository;
 import com.secopii.searchcontractssecopii.repository.model.dao.UserDAO;
+import com.secopii.searchcontractssecopii.repository.model.dao.UserLogin;
 import com.secopii.searchcontractssecopii.repository.model.entity.UserEntity;
 import com.secopii.searchcontractssecopii.services.impl.IUserFunction;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +27,12 @@ public class User {
         userRepository.save(convertDAOToUserEntity.convert(userDAO));
 
         return new ResponseEntity(HttpStatus.CREATED);
+    }
+
+    @PostMapping("/auth")
+    public ResponseEntity validateUser(@RequestBody UserLogin userLogin){
+        System.out.println(".------------>");
+        return new ResponseEntity(HttpStatus.OK);
     }
 
 }
